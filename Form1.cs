@@ -7,9 +7,9 @@ using System.Windows.Forms;
 namespace CalculatorApplication
 {
     /*****************************************************************
-    Basic calculator that does addition, subtraction, division, and 
+    A simple calculator that does addition, subtraction, division, and 
     mulitplication. It also does order of operations and has clear 
-    button and delete button. The keys on the keyboard have also been 
+    button and a delete button. The keys on the keyboard have also been 
     implemented for better use and has the ability to process decimal
     calculations.
 
@@ -676,7 +676,8 @@ namespace CalculatorApplication
                 deleteBtn_Click(sender, e);
             }
             // SHIFT + "x" for multiplication.
-            else if (e.KeyCode == Keys.D8 && e.Shift || e.KeyCode == Keys.Multiply)
+            else if (e.KeyCode == Keys.D8 && e.Shift || e.KeyCode == Keys.Multiply
+                || e.KeyCode == Keys.X)
             {
                 multiplyBtn_Click(sender, e);
             }
